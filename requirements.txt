@@ -8,3 +8,4 @@ gTTS
 PyPDF2
 python-gemini-api
 utilfunction
+pygame

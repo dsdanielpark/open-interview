@@ -62,6 +62,16 @@ interview_manager = InterviewManager(api_key=openai.api_key, engine="GPT")
 interview_manager.generate_interview(...)
 ```
 
+#### Playing Random Question Audio
+
+To randomly play `question.mp3` files from a specified folder, create an instance of the `RandomQPlay` class with the folder path, and then invoke `play_random_mp3`:
+
+```python
+player = RandomQPlay("path/to/output")  # Directory containing question.mp3 files
+player.play_random_mp3()
+```
+
+
 ### Usage
 
 Check the [Usage example code document](https://github.com/dsdanielpark/open-interview/blob/main/docs/usage.md) for detailed examples.

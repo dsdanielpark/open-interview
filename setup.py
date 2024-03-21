@@ -34,6 +34,7 @@ setup(
         "gTTS",
         "SpeechRecognition",
         "PyPDF2",
+        "pygame",
     ],
     extras_require={
         "openaivoice": [
