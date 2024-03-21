@@ -1,14 +1,14 @@
 
 # Open Interview
 
-Open Interview Assistant simplifies your job interview preparation by leveraging AI technology from leading platforms like OpenAI, Anthropic, and Google. It generates relevant technical interview questions and answers tailored to your job description and resume.
+The Open Interview Assistant streamlines your job interview prep with AI from OpenAI, Anthropic, and Google, *creating customized technical and personality interview Q&As* based on your resume and job description.
 
 ## Features
 
-- 📄 Automatic Q&A Generation: Create technical interview questions and answers from job descriptions and resumes.
-- 🗂 Document Creation: Generate Word documents (.docx) with the interview Q&A.
-- 🔊 Audio Files: Convert Q&A into audio files for listening practice.
-- ⚙️ Customizable Parameters: Adjust settings like job position, interview type, language, and sentence length.
+- **Automatic Q&A Generation:** Create technical interview questions and answers from job descriptions and resumes.
+- **Document Creation:** Generate Word documents (.docx) with the interview Q&A.
+- **Audio Files:** Convert Q&A into audio files for listening practice.
+- **Customizable Parameters:** Adjust settings like job position, interview type, language, and sentence length.
 
 <br>
 
