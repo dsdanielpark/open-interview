@@ -68,7 +68,9 @@ class RandomQPlay:
         """
         Plays MP3 files found in the directory randomly. Allows skipping to the next song or quitting via user input.
         """
-        print("Press 'q' to quit the process, 'n' to skip to the next MP3. It plays 'question.mp3' files randomly from the folder. Although set to a 2-minute interval, pressing 'n' immediately plays the next question.")
+        print(
+            "Press 'q' to quit the process, 'n' to skip to the next MP3. It plays 'question.mp3' files randomly from the folder. Although set to a 2-minute interval, pressing 'n' immediately plays the next question."
+        )
         mp3_files = self.find_mp3_files()
         random.shuffle(mp3_files)
 
