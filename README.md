@@ -5,9 +5,9 @@ The Open Interview Assistant streamlines your job interview prep with AI from Op
 
 ## Features
 
-- **Automatic Q&A Generation:** Create technical interview questions and answers from job descriptions and resumes.
-- **Document Creation:** Generate Word documents (.docx) with the interview Q&A.
-- **Audio Files:** Convert Q&A into audio files for listening practice.
+- **Automatic Q&A Generation:** Create technical interview Q&As from job descriptions and resumes.
+- **Automatic Document Creation:** Generate Word documents (.docx) with the interview Q&As.
+- **TTS/STT Audio Files:** Convert Q&As into audio files for listening practice.
 - **Customizable Parameters:** Adjust settings like job position, interview type, language, and sentence length.
 
 <br>
