@@ -1,7 +1,7 @@
 from .manager import InterviewManager
 from .models.claude import InterviewClaude
 from .models.gpt import InterviewGPT
-from .modules.voice.random_play import RandomQPlay
+from .modules.voice.random_play import RandomPlayer
 from .utils.doc_manager import DocumentCreator
 from .utils.file_manager import load_file_content
 from .utils.prompter import create_system_prompt, create_base_prompt
@@ -13,5 +13,5 @@ except ImportError:
     pass
 
 
-__version__ = "1.0.9"
+__version__ = "1.0.10"
 __author__ = "daniel park <parkminwoo1991@gmail.com>"

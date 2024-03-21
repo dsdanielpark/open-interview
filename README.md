@@ -64,10 +64,10 @@ interview_manager.generate_interview(...)
 
 #### Playing Random Question Audio
 
-To randomly play `question.mp3` files from a specified folder, create an instance of the `RandomQPlay` class with the folder path, and then invoke `play_random_mp3`:
+To randomly play `question.mp3` files from a specified folder, create an instance of the `RandomPlayer` class with the folder path, and then invoke `play_random_mp3`:
 
 ```python
-player = RandomQPlay("path/to/output")  # Directory containing question.mp3 files
+player = RandomPlayer("path/to/output")  # Directory containing question.mp3 files
 player.play_random_mp3()
 ```
 

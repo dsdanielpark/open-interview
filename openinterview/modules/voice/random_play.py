@@ -6,7 +6,7 @@ import time
 from typing import List
 
 
-class RandomQPlay:
+class RandomPlayer:
     """
     A class to play MP3 files in a given directory randomly. Allows user interaction to skip to the next song or quit the playback.
 
