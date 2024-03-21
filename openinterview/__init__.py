@@ -10,3 +10,9 @@ try:
     from openinterview.module.voice.openai import openai_tts, openai_stt
 except ImportError:
     pass
+
+
+__version__ = "1.0.4"
+__author__ = (
+    "daniel park <parkminwoo1991@gmail.com>"
+)
