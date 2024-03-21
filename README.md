@@ -22,7 +22,7 @@ Welcome to the nexus of your interview preparation odyssey.
 ### Prerequisites
 
 - **Python >= 3.7:** Ensure your command module is updated to version 3.7 or beyond.
-- **API Keys - OpenAI, Anthropic, Google:** Secure your access to the galaxies of OpenAI, Anthropic, and Google, embarking with the keys to unlock the full spectrum of your potential. 
+- **🔑 API Keys - OpenAI, Anthropic, Google:** Secure your access to the galaxies of OpenAI, Anthropic, and Google, embarking with the keys to unlock the full spectrum of your potential. 
 
 
 
