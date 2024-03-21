@@ -12,7 +12,7 @@ except ImportError:
     pass
 
 
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 __author__ = (
     "daniel park <parkminwoo1991@gmail.com>, antonio cheang <teapotv8@proton.me>"
 )
