@@ -3,7 +3,7 @@ import json
 import anthropic
 from datetime import datetime
 from typing import List, Dict, Any
-from ..utils.file_manager import load_file_content
+from openinterview.utils.file_manager import load_file_content
 
 
 class InterviewClaude:
