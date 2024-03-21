@@ -32,7 +32,7 @@ setup(
         "python-gemini-api",
         "lxml",
         "gTTS",
-        "speech_recognition",
+        "SpeechRecognition",
         "PyPDF2",
     ],
     extras_require={

@@ -3,7 +3,7 @@ anthropic
 docx
 sniffio
 lxml
-speech_recognition
+SpeechRecognition
 gTTS
 PyPDF2
 python-gemini-api
