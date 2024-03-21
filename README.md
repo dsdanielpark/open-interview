@@ -49,7 +49,7 @@ Welcome to the nexus of your interview preparation odyssey.
 pip install open-interview
 ```
 ```
-git clone https://github.com/yourusername/InterviewAssistant.git
+git clone https://github.com/dsdanielpark/open-interview.git
 pip install -r requirements.txt
 ```
 
