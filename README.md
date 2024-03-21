@@ -2,7 +2,7 @@
 
 `$ pip install open-interview`
 
-Transform your job interview preparation into an unparalleled journey with Open Interview Nexus, where the avant-garde artificial intelligence of OpenAI, Anthropic, and Google is meticulously tailored to forge your path to success. Here, every interaction is designed to sculpt your technical and personal narrative into perfection, mirroring the exigencies of your dream job.
+Transform your job interview preparation into an unparalleled journey with **Open Interview**, where the avant-garde artificial intelligence of OpenAI, Anthropic, and Google is meticulously tailored to forge your path to success. Here, every interaction is designed to sculpt your technical and personal narrative into perfection, mirroring the exigencies of your dream job.
 
 <br>
 
