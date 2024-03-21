@@ -56,7 +56,13 @@ pip install -r requirements.txt
 <br>
 
 
-### Quick Start 
+### Quick Start   
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1NWCwuunRRR2C2b0vmYk6Tm-JxV4yzSt9#scrollTo=bebO3UiGbIaD) 
+
+
+
+
 
 Generate interview content using Claude or GPT models with minimal setup:
 
@@ -98,7 +104,7 @@ player.play_random_mp3()
 
 ### Usage
 
-Check the 📋[Usage example code document](https://github.com/dsdanielpark/open-interview/blob/main/docs/usage.md) for detailed examples.
+For detailed examples, refer to the 📋[Usage example code document](https://github.com/dsdanielpark/open-interview/blob/main/docs/usage.md) or the [tutorial script](https://github.com/dsdanielpark/open-interview/blob/main/script/example.ipynb).
 
 - OpenAI GPT: Use `InterviewGPT` for GPT-based content generation.
 - Anthropic Claude: Use `InterviewClaude` for Claude-based interviews.
