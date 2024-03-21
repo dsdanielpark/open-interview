@@ -1,6 +1,6 @@
 
 # Usage
-Introduce usage samples.
+This section provides examples of how to use the tool effectively. Before proceeding, ensure you meet the following requirements:
 
 ## Prerequisites
 
@@ -46,6 +46,9 @@ More info: [anthropic.com/docs](https://www.anthropic.com/docs)
 </p>
 </details>
 
+
+<br>
+
 ## Installation
 
 ```bash
@@ -56,6 +59,8 @@ pip install open-interview
 git clone https://github.com/yourusername/InterviewAssistant.git
 pip install -r requirements.txt
 ```
+
+<br>
 
 ## Quick Start
 These examples show the minimal code required to generate interview content using either the Claude or GPT model. Replace the API keys with your actual keys, and adjust the other parameters as needed.
@@ -99,7 +104,7 @@ gpt_interview_manager.generate_interview(
 )
 ```
 
-
+<br>
 
 ## Usage
 
@@ -152,6 +157,9 @@ gpt_interview_manager.generate_interview(
     from openinterview import save_qa_as_tts
     save_qa_as_tts(generated_qa_dict, "interviews/audio")
     ```
+
+
+<br>
 
 ### Anthropic Claude
 
