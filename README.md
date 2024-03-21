@@ -4,6 +4,22 @@
 
 Transform your job interview preparation into an unparalleled journey with **Open Interview**, where the avant-garde artificial intelligence of OpenAI, Anthropic, and Google is meticulously tailored to forge your path to success. Here, every interaction is designed to sculpt your technical and personal narrative into perfection, mirroring the exigencies of your dream job.
 
+
+
+- [Open Interview ](#open-interview-)
+  - [Stellar Features ✨](#stellar-features-)
+  - [Commencing Voyage](#commencing-voyage)
+    - [Prerequisites](#prerequisites)
+    - [Installation 📦](#installation-)
+    - [Quick Start](#quick-start)
+      - [Using Claude](#using-claude)
+      - [Using GPT](#using-gpt)
+      - [Playing Random Question Audio](#playing-random-question-audio)
+    - [Usage](#usage)
+  - [FAQ \& Support](#faq--support)
+  - [License ©️](#license-️)
+
+
 <br>
 
 ## Stellar Features ✨
@@ -91,7 +107,7 @@ Check the 📋[Usage example code document](https://github.com/dsdanielpark/open
 
 ## FAQ & Support
 
-For questions and support, visit our [FAQ](https://github.com/dsdanielpark/open-interview/blob/main/documents/README_FAQ.md) and [Issues](https://github.com/dsdanielpark/open-interview/issues) pages. Contributors are welcome! Submit issues, feature suggestions, or pull requests.
+For questions and support, visit our [FAQ](https://github.com/dsdanielpark/open-interview/blob/main/documents/faq.md) and [Issues](https://github.com/dsdanielpark/open-interview/issues) pages. Contributors are welcome! Submit issues, feature suggestions, or pull requests.
 Reach out to the core maintainer, [Daniel Park](https://github.com/DSDanielPark), for direct contributions or queries.
 
 
