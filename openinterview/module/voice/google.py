@@ -70,7 +70,7 @@ def google_stt(audio_file_path: str, recognizer: str = "google") -> str:
         return f"Failed to convert speech to text: {e}."
 
 
-def save_qa_as_tts(qa_dict: Dict[str, str], save_dir: str) -> None:
+def save_google_tts(qa_dict: Dict[str, str], save_dir: str) -> None:
     """
     Generates and saves spoken versions of questions and answers from a dictionary
     using Google's Text-to-Speech API. Each question and answer pair is saved in
