@@ -5,7 +5,7 @@ This section provides examples of how to use the tool effectively. Before procee
 ## Prerequisites
 
 - Python 3.7+
-- API key 🔑 from OpenAI, Anthropic, and Google.
+- API key from OpenAI, Anthropic, and Google.
 
 
 <details>
@@ -49,7 +49,7 @@ More info: [anthropic.com/docs](https://www.anthropic.com/docs)
 
 <br>
 
-## Installation 📦
+## Installation
 
 ```bash
 pip install open-interview
@@ -211,8 +211,6 @@ gpt_interview_manager.generate_interview(
     ```
 
 
-<br>
-
 ### Playing Random Question Audio
 
 To randomly play `question.mp3` files from a specified folder, create an instance of the `RandomPlayer` class with the folder path, and then invoke `play_random_mp3`:
@@ -221,3 +219,48 @@ To randomly play `question.mp3` files from a specified folder, create an instanc
 player = RandomPlayer("path/to/output")  # Directory containing question.mp3 files
 player.play_random_mp3()
 ```
+
+
+
+## Arguments and Prompt engineering
+
+You can achieve your goals by directly utilizing the system_prompt and user_prompt based on the following information.
+
+### Arguments
+
+| Argument Name      | Role                                                                                           |
+|---------------------|------------------------------------------------------------------------------------------------|
+| position            | Refers to AI researcher or the specific job role.                                             |
+| jd                  | Represents the job description.                                                               |
+| interview_type      | Indicates the type of interview. Default is 'base'.                                           |
+| language            | Specifies the language to be used. Default is English.                                         |
+| candidate_resume    | Represents the resume of the candidate.                                                       |
+| interviewer_resume  | Represents the resume of the interviewer.                                                     |
+| max_sentence        | Specifies the minimum number of sentences to be included in each answer. Default is 10.        |
+| custom_prompt       | Provides user-defined additional instructions.                                                 |
+
+
+### Prompt engineering
+
+**System Prompt:**
+- The system prompt is generated based on information such as `position`, `interview_type`, `jd`, `language`, `candidate_resume`, `interviewer_resume`, `max_sentence`, `custom_prompt`, etc.
+- It includes specific instructions tailored to the user's role and interview type.
+- Additionally, any additional user-defined instructions are also incorporated into the system prompt.
+
+**User Prompt:**
+- User prompts vary depending on the interviewer's role.
+- Specific instructions for each type of interview are provided.
+- Additional instructions, such as highlighting specific sections of the resume, may also be included based on the interviewer's role.
+
+These prompts are designed to facilitate interaction between the user and the system, with specific details provided to the user.
+
+
+
+| Type               | Prompt Content                                                                                                                                                                                                                                          |
+|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| System Prompt      | - **Basic Information:** Generated based on Position, Interview Type, JD, Language, Candidate Resume, Interviewer Resume, Max Sentence, etc.                                                                                                                                                                        |
+|                    | - **Additional Instructions by Interview Type:** Includes specific instructions based on Interview Type (e.g., generalQAs, generalTechQAs, techQAsFromResume, techQAsFromExperts, techQAs, personalityQAs, reviewResume, etc.).                                                                                   |
+|                    | - **Additional Instructions:** If a custom_prompt provided by the user exists, it is included in the prompt returned.                                                                                                                                                                                                 |
+| User Prompt        | - **User Instructions by Interview Type:** Provides user instructions specific to Interview Type (e.g., generateQs, generateQAs, pointOutResume, adviceResume, etc.).                                                                                                                                              |
+|                    | - **Prompt Format:** Returned in text format containing given arguments and specific instructions.                                                                                                                                                                                                                   |
+
