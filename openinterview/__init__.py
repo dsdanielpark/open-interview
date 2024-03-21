@@ -13,6 +13,4 @@ except ImportError:
 
 
 __version__ = "1.0.4"
-__author__ = (
-    "daniel park <parkminwoo1991@gmail.com>"
-)
+__author__ = "daniel park <parkminwoo1991@gmail.com>"
