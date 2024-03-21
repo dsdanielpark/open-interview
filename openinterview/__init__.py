@@ -7,7 +7,7 @@ from .utils.prompter import create_system_prompt, create_base_prompt
 from .modules.voice.google import google_tts, google_stt, save_google_tts
 
 try:
-    from openinterview.modules.voice.openai import openai_tts, openai_stt
+    from .modules.voice.openai import openai_tts, openai_stt
 except ImportError:
     pass
 
