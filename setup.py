@@ -27,7 +27,7 @@ setup(
     install_requires=[
         "openai==0.28",
         "anthropic",
-        "docx",
+        "python-docx",
         "utilfunction",
         "python-gemini-api",
         "lxml",

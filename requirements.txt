@@ -1,6 +1,6 @@
 openai==0.28
 anthropic
-docx
+python-docx
 sniffio
 lxml
 SpeechRecognition
