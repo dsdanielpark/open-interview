@@ -104,7 +104,7 @@ player.play_random_mp3()
 
 ### Usage
 
-For detailed examples, refer to the 📋[Usage example code document](https://github.com/dsdanielpark/open-interview/blob/main/docs/usage.md) or the [tutorial script](https://github.com/dsdanielpark/open-interview/blob/main/script/example.ipynb).
+For detailed examples, refer to the 📋[Usage example code document](https://github.com/dsdanielpark/open-interview/blob/main/docs/usage.md) or the 💻[tutorial script](https://github.com/dsdanielpark/open-interview/blob/main/script/example.ipynb).
 
 - OpenAI GPT: Use `InterviewGPT` for GPT-based content generation.
 - Anthropic Claude: Use `InterviewClaude` for Claude-based interviews.
