@@ -9,5 +9,5 @@ from .openinterview.utils.file_manager import load_file_content
 from .openinterview.utils.prompter import create_system_prompt, create_base_prompt
 
 
-__version__ = "1.0.3"
+__version__ = "1.0.4"
 __author__ = "daniel park <parkminwoo1991@gmail.com>"
