@@ -1,4 +1,4 @@
-# Open Interview
+# Open Interview <img alt="PyPI" src="https://img.shields.io/pypi/v/open-interview?color=black">
 
 `$ pip install open-interview`
 
