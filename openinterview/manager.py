@@ -1,6 +1,6 @@
 import os
 from .models import InterviewClaude, InterviewGPT
-from .module.voice.google import save_google_tts
+from .modules.voice.google import save_google_tts
 from .utils.doc_manager import DocumentCreator
 
 
