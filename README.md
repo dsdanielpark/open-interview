@@ -10,6 +10,9 @@ Open Interview Assistant simplifies your job interview preparation by leveraging
 - 🔊 Audio Files: Convert Q&A into audio files for listening practice.
 - ⚙️ Customizable Parameters: Adjust settings like job position, interview type, language, and sentence length.
 
+<br>
+
+
 ## Getting Started
 
 ### Prerequisites
@@ -27,6 +30,9 @@ pip install open-interview
 git clone https://github.com/yourusername/InterviewAssistant.git
 pip install -r requirements.txt
 ```
+
+<br>
+
 
 ### Quick Start
 
@@ -56,14 +62,14 @@ interview_manager = InterviewManager(api_key=openai.api_key, engine="GPT")
 interview_manager.generate_interview(...)
 ```
 
-## Usage
+### Usage
 
-Check the [Usage section](#usage) for detailed examples. Generate interview content by providing job descriptions, resumes, and specifying parameters like the job position and interview type.
+Check the [Usage example code document](https://github.com/dsdanielpark/open-interview/blob/main/docs/usage.md) for detailed examples.
 
 - OpenAI GPT: Use `InterviewGPT` for GPT-based content generation.
 - Anthropic Claude: Use `InterviewClaude` for Claude-based interviews.
 
-
+<br>
 
 ## FAQ & Support
 
