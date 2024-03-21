@@ -154,8 +154,8 @@ gpt_interview_manager.generate_interview(
     interview_coach.create_qa_document(generated_qa_dict, "CompanyName", 11, "interviews/documents")
     
     # Generate audio files
-    from openinterview import save_qa_as_tts
-    save_qa_as_tts(generated_qa_dict, "interviews/audio")
+    from openinterview import save_google_tts
+    save_google_tts(generated_qa_dict, "interviews/audio")
     ```
 
 
@@ -206,6 +206,6 @@ gpt_interview_manager.generate_interview(
     interview_coach.create_qa_document(generated_qa_dict, "CompanyName", 11, "interviews/documents")
     
     # Generate audio files
-    from openinterview import save_qa_as_tts
-    save_qa_as_tts(generated_qa_dict, "interviews/audio")
+    from openinterview import save_google_tts
+    save_google_tts(generated_qa_dict, "interviews/audio")
     ```

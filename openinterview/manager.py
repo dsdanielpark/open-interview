@@ -1,6 +1,6 @@
 import os
 from .models import InterviewClaude, InterviewGPT
-from .module.voice.google import save_qa_as_tts
+from .module.voice.google import save_google_tts
 from .utils.doc_manager import DocumentCreator
 
 
@@ -52,4 +52,4 @@ class InterviewManager:
             generated_qa_dict, "TeamViewer15", 11, os.path.join(output_dir, "document")
         )
 
-        save_qa_as_tts(generated_qa_dict, os.path.join(output_dir, "voice"))
+        save_google_tts(generated_qa_dict, os.path.join(output_dir, "voice"))
