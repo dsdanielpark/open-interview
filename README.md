@@ -1,5 +1,5 @@
 # Open Interview
-Interview Assistant is a tool that helps you prepare for job interviews by leveraging AI models from OpenAI, Anthropic, Google. It automatically generates technical interview questions and model answers based on a job description and a candidate's resume.
+Open Interview Assistant simplifies your job interview preparation by leveraging AI technology from leading platforms like OpenAI, Anthropic, and Google. It generates relevant technical interview questions and answers tailored to your job description and resume.
 
 ## Features
 
@@ -8,10 +8,45 @@ Interview Assistant is a tool that helps you prepare for job interviews by lever
 - 🔊 Generate audio files (text-to-speech) for Q&A
 - ⚙️ Customize parameters like job position, interview type, language, sentence length, etc.
 
+
+
+- [Open Interview](#open-interview)
+  - [Features](#features)
+  - [Prerequisites](#prerequisites)
+    - [OpenAI API Key and Credits](#openai-api-key-and-credits)
+    - [Anthropic API Key and Credits](#anthropic-api-key-and-credits)
+  - [Installation](#installation)
+  - [Quick Start](#quick-start)
+    - [Using Claude](#using-claude)
+    - [Using GPT](#using-gpt)
+  - [Usage](#usage)
+    - [OpenAI GPT](#openai-gpt)
+    - [Anthropic Claude](#anthropic-claude)
+  - [FAQ](#faq)
+  - [Issues](#issues)
+  - [Contributors](#contributors)
+  - [Contacts](#contacts)
+  - [License ©️](#license-️)
+
+
+
+
 ## Prerequisites
 
 - Python 3.7+
-- API key from OpenAI, Anthropic, Google.
+- API key from OpenAI, Anthropic, and Google.
+
+
+<details><summary>OpenAI API Key and Credits</summary>
+
+You can get an OpenAI API Key 1. Sign up or log in to your OpenAI account. 2. Navigate to the API section. 3. Follow the instructions to generate a new API key. For detailed steps, visit [OpenAI API Documentation](https://beta.openai.com/docs/api-reference/authentication). To add billing credits: 1. Go to the Billing section in your OpenAI account. 2. Choose to add credits or update your billing method. For more information on managing billing and credits, check out [OpenAI Billing FAQ](https://help.openai.com/en/articles/5726858-billing-faq).
+</details>
+
+<details>
+<summary>Anthropic API Key and Credits</summary>
+
+You can get an Claude AI API key by: 1. Sign up at [anthropic.com](https://www.anthropic.com/) 2. Click "API Keys" in the top menu 3. Click "Create API Key" To add billing credits: 1. Click "Billing" in top menu 2. Click "Add Credits" to purchase More info: [anthropic.com/docs](https://www.anthropic.com/docs)
+</details>
 
 ## Installation
 
@@ -76,7 +111,7 @@ gpt_interview_manager.generate_interview(
     
     ```python
     import openai
-    openai.api_key = "your_openai_api_key"
+    openai.api_key = "value"
     from openinterview import InterviewGPT
     
     gpt_interviewer = InterviewGPT(api_key=openai.api_key)
@@ -127,7 +162,7 @@ gpt_interview_manager.generate_interview(
     ```python
     from openinterview import InterviewClaude
     
-    claudeToken = "your_claude_api_key"
+    claudeToken = "value"
     claude_interviewer = InterviewClaude(api_key=claudeToken, engine="Claude")
     ```
 
