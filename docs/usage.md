@@ -5,7 +5,7 @@ This section provides examples of how to use the tool effectively. Before procee
 ## Prerequisites
 
 - Python 3.7+
-- API key from OpenAI, Anthropic, and Google.
+- API key 🔑 from OpenAI, Anthropic, and Google.
 
 
 <details>
@@ -49,7 +49,7 @@ More info: [anthropic.com/docs](https://www.anthropic.com/docs)
 
 <br>
 
-## Installation
+## Installation 📦
 
 ```bash
 pip install open-interview
@@ -210,6 +210,8 @@ gpt_interview_manager.generate_interview(
     save_google_tts(generated_qa_dict, "interviews/audio")
     ```
 
+
+<br>
 
 ### Playing Random Question Audio
 
