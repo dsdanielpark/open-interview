@@ -37,7 +37,7 @@ setup(
     ],
     extras_require={
         "openaivoice": [
-            "openai", 
+            "openai",
         ]
     },
     keywords="Interview, LLM, ChatGPT, OpenAI, Claude, Anthropic",
