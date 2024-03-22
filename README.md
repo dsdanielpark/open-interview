@@ -151,7 +151,7 @@ For detailed examples, refer to the 📋[Usage document for example code and pro
 <br>
 
 ## Contribution
-For detailed guidance on contributions, please refer to the [contribution guide](https://github.com/dsdanielpark/open-interview/tree/main/docs). We appreciate your interest in contributing and look forward to your valuable input. 
+For detailed guidance on contributions, please refer to the [contribution guide](https://github.com/dsdanielpark/open-interview/blob/main/docs/contributions.md). We appreciate your interest in contributing and look forward to your valuable input. 
 
 Thank you for supporting our project.
 
