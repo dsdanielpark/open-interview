@@ -151,7 +151,7 @@ gpt_interview_manager.generate_interview(
     # Create Word document
     from openinterview import DocumentCreator
     interview_coach = DocumentCreator()
-    interview_coach.create_qa_document(generated_qa_dict, "CompanyName", 11, "interviews/documents")
+    interview_coach.create_qa_document(generated_qa_dict, "TeamViewer15", 11, "interviews/documents")
     
     # Generate audio files
     from openinterview import save_google_tts
@@ -203,7 +203,7 @@ gpt_interview_manager.generate_interview(
     # Create Word document
     from openinterview import DocumentCreator
     interview_coach = DocumentCreator()
-    interview_coach.create_qa_document(generated_qa_dict, "CompanyName", 11, "interviews/documents")
+    interview_coach.create_qa_document(generated_qa_dict, "TeamViewer15", 11, "interviews/documents")
     
     # Generate audio files
     from openinterview import save_google_tts
