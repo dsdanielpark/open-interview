@@ -1,9 +1,10 @@
 import os
+import time
 import random
 import pygame
 import threading
-import time
 from typing import List
+from IPython.display import display, Audio
 
 
 class RandomPlayer:
@@ -15,7 +16,7 @@ class RandomPlayer:
         next_song (bool): A flag to control the flow of songs, whether to skip to the next song or not.
     """
 
-    def __init__(self, directory: str) -> None:
+    def __init__(self, directory: str, interval: int) -> None:
         """
         Initializes the MP3Player with the directory containing MP3 files.
 
@@ -24,7 +25,11 @@ class RandomPlayer:
         """
         self.directory = directory
         self.next_song = False
-        pygame.mixer.init()
+        self.interval = interval
+        try:
+            pygame.mixer.init()
+        except:
+            pass
 
     def find_mp3_files(self) -> List[str]:
         """
@@ -69,27 +74,31 @@ class RandomPlayer:
         Plays MP3 files found in the directory randomly. Allows skipping to the next song or quitting via user input.
         """
         print(
-            "Press 'q' to quit the process, 'n' to skip to the next MP3. It plays 'question.mp3' files randomly from the folder. Although set to a 2-minute interval, pressing 'n' immediately plays the next question."
+            "Press 'q' to quit the process, 'n' to skip to the next MP3.\nIt plays 'question.mp3' files randomly from the folder. \n\nAlthough set to a 2-minute interval, pressing 'n' immediately plays the next question."
         )
         mp3_files = self.find_mp3_files()
         random.shuffle(mp3_files)
+        try:
+            for mp3_file in mp3_files:
+                self.next_song = False
+                print(f"Now playing: {mp3_file}")
+                self.play_mp3_file(mp3_file)
 
-        for mp3_file in mp3_files:
-            self.next_song = False
-            print(f"Now playing: {mp3_file}")
-            self.play_mp3_file(mp3_file)
+                listener_thread = threading.Thread(target=self.input_listener)
+                listener_thread.start()
 
-            listener_thread = threading.Thread(target=self.input_listener)
-            listener_thread.start()
+                while pygame.mixer.music.get_busy() and not self.next_song:
+                    time.sleep(0.1)
 
-            while pygame.mixer.music.get_busy() and not self.next_song:
-                time.sleep(0.1)
+                listener_thread.join()
 
-            listener_thread.join()
-
-            if self.next_song:
-                continue
-            if not pygame.mixer.music.get_busy():
-                break
-
-        print("Finished playing all files or stopped by user.")
+                if self.next_song:
+                    continue
+                if not pygame.mixer.music.get_busy():
+                    break
+            print("Finished playing.")
+        except:
+            print("Fail to autoplay. Try to play manually.")
+            for mp3_file in mp3_files:
+                print(f"File: {mp3_file}")
+                display(Audio(mp3_file, autoplay=False))

@@ -28,10 +28,10 @@ class InterviewGPT:
         Raises:
             ValueError: If the API key is not provided.
         """
+        self.model = model
         self.api_key = api_key
         if not self.api_key:
             raise ValueError("API key is required. Visit https://platform.openai.com/")
-        self.model = model
         self.client = openai.ChatCompletion(api_key=self.api_key)
         self.messages: List[Dict[str, str]] = []
 
