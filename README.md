@@ -15,17 +15,18 @@ Transform your job interview preparation into an unparalleled journey with **Ope
 
 
 - [Open Interview ](#open-interview-)
-  - [Stellar Features](#stellar-features-)
+  - [Stellar Features ✨](#stellar-features-)
   - [Commencing Voyage](#commencing-voyage)
     - [Prerequisites](#prerequisites)
-    - [Installation](#installation-)
+    - [Installation 📦](#installation-)
     - [Quick Start](#quick-start)
       - [Using Claude](#using-claude)
       - [Using GPT](#using-gpt)
       - [Playing Random Question Audio](#playing-random-question-audio)
     - [Usage](#usage)
+  - [Contribution](#contribution)
   - [FAQ \& Support](#faq--support)
-  - [License](#license-️)
+  - [License ©️](#license-️)
 
 
 <br>
@@ -96,7 +97,7 @@ can accommodate extensive text.
 
 claude_interview_manager.generate_interview(
     jd=jd,
-    resume="path/resume.pdf or path/resume.txt or string",
+    resume="path/resume.pdf or path/resume.txt or long text.",
     position= "AI Researcher",
     interview_type="techQAsFromResume",
     language="English", # Any language you want
@@ -117,7 +118,7 @@ gpt_interview_manager = InterviewManager(api_key=openai.api_key, engine="GPT")
 
 gpt_interview_manager.generate_interview(
     jd="This role demands a deep enthusiasm for AI development.", # Feasible for long text
-    resume="path/resume.pdf or path/resume.txt or long text",
+    resume="path/resume.pdf or path/resume.txt or long text.",
     position= "AI Researcher",
     interview_type="techQAsFromResume",
     language="English", # Any language you want
@@ -147,8 +148,12 @@ For detailed examples, refer to the 📋[Usage document for example code and pro
 
 - OpenAI GPT: Use `InterviewGPT` for GPT-based content generation.
 - Anthropic Claude: Use `InterviewClaude` for Claude-based interviews.
-
 <br>
+
+## Contribution
+For detailed guidance on contributions, please refer to the [contribution guide](https://github.com/dsdanielpark/open-interview/tree/main/docs). We appreciate your interest in contributing and look forward to your valuable input. 
+
+Thank you for supporting our project.
 
 ## FAQ & Support
 
@@ -157,6 +162,6 @@ Reach out to the core maintainer, [Daniel Park](https://github.com/DSDanielPark)
 
 
 ## License ©️ 
-[Apache 2.0](https://opensource.org/license/apache-2-0) license, Minwoo(Daniel) Park, 2024. 
+[Apache 2.0](https://opensource.org/license/apache-2-0) license, 2024. 
 
 
