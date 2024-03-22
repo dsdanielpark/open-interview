@@ -284,7 +284,7 @@ player.play_random_mp3()
 You can achieve your goals by directly utilizing the system_prompt and user_prompt based on the following information.
 
 > [!NOTE]
-> For OpenAI, `gpt-3.5-turbo` is the default, while for Claude, `claude-3-opus-20240229` with 4096 tokens is standard. Recognizing the need for model-specific prompt engineering, the prompter function is separated for examples and bound as a static method at [prompter.py](https://github.com/dsdanielpark/open-interview/blob/main/openinterview/utils/prompter.py). Consider different prompt engineering if using other models. You can check [Open AI - Models](https://platform.openai.com/docs/models), [Anthropic - Models](https://docs.anthropic.com/claude/docs/models-overview) for more details.
+> OpenAI defaults to `gpt-3.5-turbo`, while Claude's standard is `claude-3-opus-20240229` with a 4096 token limit. Given the importance of crafting model-specific prompts, the `InterviewGPT` and `InterviewClaude` classes incorporate a static method for prompt generation. However, I've provided separate examples in [prompter.py](https://github.com/dsdanielpark/open-interview/blob/main/openinterview/utils/prompter.py). Should you opt for different models, it's advisable to adapt your prompt engineering accordingly. For further information, you can visit [Open AI - Models](https://platform.openai.com/docs/models) and [Anthropic - Models](https://docs.anthropic.com/claude/docs/models-overview).
 
 ### **System Prompt:**
 - The system prompt is generated based on information such as `position`, `interview_type`, `jd`, `language`, `candidate_resume`, `interviewer_resume`, `max_sentence`, `custom_prompt`, etc.
