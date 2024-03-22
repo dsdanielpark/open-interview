@@ -89,9 +89,13 @@ The 'jd', 'resume', and other arguments
 can accommodate extensive text.
 """
 
+resume = """
+Very long text can be pasted in here.
+"""
+
 claude_interview_manager.generate_interview(
     jd=jd,
-    resume="path/resume.pdf or path/resume.txt or string",
+    resume=resume,
     position= "AI Researcher",
     interview_type="techQAsFromResume",
     language="English", # Any language you want
