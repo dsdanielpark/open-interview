@@ -62,25 +62,42 @@ pip install -r requirements.txt
 
 <br>
 
-## Quick Start
+## Quick Start 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1NWCwuunRRR2C2b0vmYk6Tm-JxV4yzSt9#scrollTo=bebO3UiGbIaD) 
+
+
 These examples show the minimal code required to generate interview content using either the Claude or GPT model. Replace the API keys with your actual keys, and adjust the other parameters as needed.
 
+
+
+
+
 ### Using Claude
+
+> [!IMPORTANT] 
+> Increasing the `iteration` argument can generate more QAs but may lead to duplicates and excessive token usage, as it's an experimental feature.
+
 
 ```python
 from openinterview import InterviewManager
 
-claudeToken = "value"
+claudeToken = "<your_claude_token>"
 claude_interview_manager = InterviewManager(api_key=claudeToken, engine="Claude")
 
+jd = """
+The 'jd', 'resume', and other arguments
+can accommodate extensive text.
+"""
+
 claude_interview_manager.generate_interview(
-    jd="This role demands a deep enthusiasm for AI development.",
-    resume="path/resume.pdf",
+    jd=jd,
+    resume="path/resume.pdf or path/resume.txt or string",
     position= "AI Researcher",
     interview_type="techQAsFromResume",
-    language="English",
+    language="English", # Any language you want
     max_sentence=5,
     output_dir="save/dirs",
+    iteration=1, # [Caution] You can make more QAs, But it cost token very fastly.
 )
 ```
 
@@ -90,19 +107,30 @@ claude_interview_manager.generate_interview(
 import openai
 from openinterview import InterviewManager
 
-openai.api_key = "value"
+openai.api_key = "<your_openai_token>"
 gpt_interview_manager = InterviewManager(api_key=openai.api_key, engine="GPT")
 
 gpt_interview_manager.generate_interview(
-    jd="This role demands a deep enthusiasm for AI development.",
-    resume="path/resume.pdf",
+    jd="This role demands a deep enthusiasm for AI development.", # Feasible for long text
+    resume="path/resume.pdf or path/resume.txt or long text",
     position= "AI Researcher",
     interview_type="techQAsFromResume",
-    language="English",
+    language="English", # Any language you want
     max_sentence=5,
     output_dir="save/dirs",
+    iteration=1, # [Caution] You can make more QAs, But it cost token very fastly.
 )
 ```
+
+### Playing Random Question Audio
+
+To randomly play `question.mp3` files from a specified folder, create an instance of the `RandomPlayer` class with the folder path, and then invoke `play_random_mp3`:
+
+```python
+player = RandomPlayer(directory="path/to/output", interval=120)  # Directory containing question.mp3 files
+player.play_random_mp3()
+```
+Default plays randomly for 2 minutes. Press 'n' for next question, 'q' to quit.
 
 <br>
 
@@ -216,7 +244,7 @@ gpt_interview_manager.generate_interview(
 To randomly play `question.mp3` files from a specified folder, create an instance of the `RandomPlayer` class with the folder path, and then invoke `play_random_mp3`:
 
 ```python
-player = RandomPlayer("path/to/output")  # Directory containing question.mp3 files
+player = RandomPlayer(directory="path/to/output", interval=120)  # Directory containing question.mp3 files
 player.play_random_mp3()
 ```
 
