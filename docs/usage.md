@@ -7,45 +7,45 @@ This section provides examples of how to use the tool effectively. Before procee
 - Python 3.7+
 - API key from OpenAI, Anthropic, and Google.
 
-
-<details>
-<summary>OpenAI API Key and Credits</summary>
-<p>
-
-You can get an OpenAI API Key by following these steps:
-1. Sign up or log in to your OpenAI account.
-2. Navigate to the API section.
-3. Follow the instructions to generate a new API key.
-
-For detailed steps, visit [OpenAI API Documentation](https://beta.openai.com/docs/api-reference/authentication).
-
-To add billing credits:
-1. Go to the Billing section in your OpenAI account.
-2. Choose to add credits or update your billing method.
-
-For more information on managing billing and credits, check out [OpenAI Billing FAQ](https://help.openai.com/en/articles/5726858-billing-faq).
-
-</p>
-</details>
-
-<details>
-<summary>Anthropic API Key and Credits</summary>
-<p>
-
-You can get an Anthropic Claude AI API key by: 
-1. Signing up at [anthropic.com](https://www.anthropic.com/).
-2. Clicking "API Keys" in the top menu.
-3. Clicking "Create API Key".
-
-To add billing credits:
-1. Click "Billing" in the top menu.
-2. Click "Add Credits" to purchase.
-
-More info: [anthropic.com/docs](https://www.anthropic.com/docs)
-
-</p>
-</details>
-
+    
+    <details>
+    <summary>OpenAI API Key and Credits</summary>
+    <p>
+    
+    You can get an OpenAI API Key by following these steps:
+    1. Sign up or log in to your OpenAI account.
+    2. Navigate to the API section.
+    3. Follow the instructions to generate a new API key.
+    
+    For detailed steps, visit [OpenAI API Documentation](https://beta.openai.com/docs/api-reference/authentication).
+    
+    To add billing credits:
+    1. Go to the Billing section in your OpenAI account.
+    2. Choose to add credits or update your billing method.
+    
+    For more information on managing billing and credits, check out [OpenAI Billing FAQ](https://help.openai.com/en/articles/5726858-billing-faq).
+    
+    </p>
+    </details>
+    
+    <details>
+    <summary>Anthropic API Key and Credits</summary>
+    <p>
+    
+    You can get an Anthropic Claude AI API key by: 
+    1. Signing up at [anthropic.com](https://www.anthropic.com/).
+    2. Clicking "API Keys" in the top menu.
+    3. Clicking "Create API Key".
+    
+    To add billing credits:
+    1. Click "Billing" in the top menu.
+    2. Click "Add Credits" to purchase.
+    
+    More info: [anthropic.com/docs](https://www.anthropic.com/docs)
+    
+    </p>
+    </details>
+    
 
 <br>
 
