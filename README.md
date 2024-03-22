@@ -42,6 +42,9 @@ Transform your job interview preparation into an unparalleled journey with **Ope
 ## Commencing Voyage
 Welcome to the nexus of your interview preparation odyssey.
 
+> [!IMPORTANT] 
+> Token usage for experimental projects can be high, possibly exhausting paid API tokens quickly. A long-response prompt is now active. Please see the document below to adjust system and user prompts accordingly.
+
 
 ### Prerequisites
 
