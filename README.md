@@ -77,7 +77,7 @@ pip install -r requirements.txt
 
 Generate interview content using Claude or GPT models with minimal setup:
 
-### Using Claude
+#### Using Claude
 
 ```python
 from openinterview import InterviewManager
@@ -96,7 +96,7 @@ claude_interview_manager.generate_interview(
 )
 ```
 
-### Using GPT
+#### Using GPT
 
 ```python
 import openai
