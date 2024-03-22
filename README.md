@@ -106,7 +106,7 @@ To randomly play `question.mp3` files from a specified folder, create an instanc
 player = RandomPlayer("path/to/output")  # Directory containing question.mp3 files
 player.play_random_mp3()
 ```
-
+Default plays randomly for 2 minutes. Press 'n' for next question, 'q' to quit.
 
 <br>
 
