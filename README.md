@@ -25,7 +25,7 @@ Transform your job interview preparation into an unparalleled journey with **Ope
       - [Playing Random Question Audio](#playing-random-question-audio)
     - [Usage](#usage)
   - [FAQ \& Support](#faq--support)
-  - [License ©️](#license-️)
+  - [License](#license-️)
 
 
 <br>
