@@ -93,6 +93,7 @@ claude_interview_manager.generate_interview(
     language="English", # Any language you want
     max_sentence=5,
     output_dir="save/dirs",
+    iteration=1, # [Caution] You can make more QAs, But it cost token very fastly.
 )
 ```
 
@@ -113,6 +114,7 @@ gpt_interview_manager.generate_interview(
     language="English", # Any language you want
     max_sentence=5,
     output_dir="save/dirs",
+    iteration=1, # [Caution] You can make more QAs, But it cost token very fastly.
 )
 ```
 
@@ -144,6 +146,6 @@ Reach out to the core maintainer, [Daniel Park](https://github.com/DSDanielPark)
 
 
 ## License ©️ 
-[Apache 2.0](https://opensource.org/license/apache-2-0) license, 2024. 
+[Apache 2.0](https://opensource.org/license/apache-2-0) license, Minwoo(Daniel) Park, 2024. 
 
 
