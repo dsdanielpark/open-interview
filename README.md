@@ -131,6 +131,18 @@ gpt_interview_manager.generate_interview(
 )
 ```
 
+
+
+Interview_type arguments as follow:
+  - *generalQAs*: Ask about technical and personal skills in-depth.
+  - *generalTechQAs*: Ask basic professional questions related to the job.
+  - *techQAsFromResume*: Focus on technical skills listed on the resume.
+  - *techQAsFromExperts*: Questions based on interviewer's expertise.
+  - *techQAs*: Questions based on both parties' experiences.
+  - *personalityQAs*: Inquire about personal qualities.
+  - *reviewResume*: Identify and suggest improvements for the resume.
+
+
 #### Playing Random Question Audio
 
 To randomly play `question.mp3` files from a specified folder, create an instance of the `RandomPlayer` class with the folder path, and then invoke `play_random_mp3`:
