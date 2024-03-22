@@ -146,15 +146,18 @@ Default plays randomly for 2 minutes. Press 'n' for next question, 'q' to quit.
     
     ```python
     import openai
-    openai.api_key = "value"
     from openinterview import InterviewGPT
+    
+    openai.api_key = "value"
     
     gpt_interviewer = InterviewGPT(api_key=openai.api_key)
     ```
 
-2. Provide the job description and resume, set the desired parameters, and call the `generate_interview_content` method to generate the interview content.
+2. Provide the job description and resume, set the desired parameters, and generate system and user prompts in the following format. Check the generated prompts and modify as needed. You can create the desired prompt through a few attempts via web or API.
     
     ```python
+    from openinterview import InterviewGPT
+    
     jd = "This role demands a deep enthusiasm for AI development."
     resume = "I'm a passionate AI engineer. https://github.com/dsdanielpark"
     
@@ -166,9 +169,14 @@ Default plays randomly for 2 minutes. Press 'n' for next question, 'q' to quit.
         language="English",
         max_sentence=6
         )
-    
+    print(system_prompt)
+
     user_prompt = InterviewGPT.create_base_prompt("generateQAs")
+    print(user_prompt)
+    ```
     
+3. Call the `generate_interview_content` method to generate the interview content.    
+    ``` 
     generated_qa_dict = gpt_interviewer.generate_interview_content(
         system_prompt=system_prompt,
         user_prompt=user_prompt,
@@ -177,7 +185,7 @@ Default plays randomly for 2 minutes. Press 'n' for next question, 'q' to quit.
     )
     ```
 
-3. You can create Word documents or generate audio files from the generated questions and answers.
+4. You can create Word documents or generate audio files from the generated questions and answers.
     
     ```python
     # Create Word document
@@ -203,10 +211,11 @@ Default plays randomly for 2 minutes. Press 'n' for next question, 'q' to quit.
     claudeToken = "value"
     claude_interviewer = InterviewClaude(api_key=claudeToken, engine="Claude")
     ```
+2. Provide the job description and resume, set the desired parameters, and generate system and user prompts in the following format. Check the generated prompts and modify as needed. You can create the desired prompt through a few attempts via web or API.
 
-2. Provide the job description and resume, set the desired parameters, and call the `generate_interview_content` method to generate the interview content.
-    
     ```python
+    from openinterview import InterviewGPT
+
     jd = "This role demands a deep enthusiasm for AI development."
     resume = "I'm a passionate AI engineer. https://github.com/dsdanielpark"
     
@@ -218,9 +227,14 @@ Default plays randomly for 2 minutes. Press 'n' for next question, 'q' to quit.
         language="English",
         max_sentence=6
     )
+    print(system_prompt)
     
     user_prompt = InterviewClaude.create_base_prompt("generateQAs")
-    
+    print(user_prompt)
+    ```
+
+3. Call the `generate_interview_content` method to generate the interview content.
+    ```python
     generated_qa_dict = claude_interviewer.generate_interview_content(
         system_prompt=system_prompt,
         user_prompt=user_prompt,
@@ -229,7 +243,7 @@ Default plays randomly for 2 minutes. Press 'n' for next question, 'q' to quit.
     )
     ```
 
-3. You can create Word documents or generate audio files from the generated questions and answers.
+4. You can create Word documents or generate audio files from the generated questions and answers.
     
     ```python
     # Create Word document
