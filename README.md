@@ -77,28 +77,43 @@ pip install -r requirements.txt
 
 Generate interview content using Claude or GPT models with minimal setup:
 
-#### Using Claude
+### Using Claude
 
 ```python
 from openinterview import InterviewManager
 
 claudeToken = "<your_claude_token>"
-interview_manager = InterviewManager(api_key=claudeToken, engine="Claude")
+claude_interview_manager = InterviewManager(api_key=claudeToken, engine="Claude")
 
-# Generate and save interview content
-interview_manager.generate_interview(...)
+claude_interview_manager.generate_interview(
+    jd="This role demands a deep enthusiasm for AI development.",
+    resume="path/resume.pdf or path/resume.txt or string",
+    position= "AI Researcher",
+    interview_type="techQAsFromResume",
+    language="English", # Any language you want
+    max_sentence=5,
+    output_dir="save/dirs",
+)
 ```
 
-#### Using GPT
+### Using GPT
 
 ```python
+import openai
 from openinterview import InterviewManager
 
-openai.api_key = "<your_gpt_token>"
-interview_manager = InterviewManager(api_key=openai.api_key, engine="GPT")
+openai.api_key = "<your_openai_token>"
+gpt_interview_manager = InterviewManager(api_key=openai.api_key, engine="GPT")
 
-# Generate and save interview content
-interview_manager.generate_interview(...)
+gpt_interview_manager.generate_interview(
+    jd="This role demands a deep enthusiasm for AI development.",
+    resume="path/resume.pdf or path/resume.txt or string",
+    position= "AI Researcher",
+    interview_type="techQAsFromResume",
+    language="English", # Any language you want
+    max_sentence=5,
+    output_dir="save/dirs",
+)
 ```
 
 #### Playing Random Question Audio
