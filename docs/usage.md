@@ -7,45 +7,45 @@ This section provides examples of how to use the tool effectively. Before procee
 - Python 3.7+
 - API key from OpenAI, Anthropic, and Google.
 
-
-<details>
-<summary>OpenAI API Key and Credits</summary>
-<p>
-
-You can get an OpenAI API Key by following these steps:
-1. Sign up or log in to your OpenAI account.
-2. Navigate to the API section.
-3. Follow the instructions to generate a new API key.
-
-For detailed steps, visit [OpenAI API Documentation](https://beta.openai.com/docs/api-reference/authentication).
-
-To add billing credits:
-1. Go to the Billing section in your OpenAI account.
-2. Choose to add credits or update your billing method.
-
-For more information on managing billing and credits, check out [OpenAI Billing FAQ](https://help.openai.com/en/articles/5726858-billing-faq).
-
-</p>
-</details>
-
-<details>
-<summary>Anthropic API Key and Credits</summary>
-<p>
-
-You can get an Anthropic Claude AI API key by: 
-1. Signing up at [anthropic.com](https://www.anthropic.com/).
-2. Clicking "API Keys" in the top menu.
-3. Clicking "Create API Key".
-
-To add billing credits:
-1. Click "Billing" in the top menu.
-2. Click "Add Credits" to purchase.
-
-More info: [anthropic.com/docs](https://www.anthropic.com/docs)
-
-</p>
-</details>
-
+    
+    <details>
+    <summary>OpenAI API Key and Credits</summary>
+    <p>
+    
+    You can get an OpenAI API Key by following these steps:
+    1. Sign up or log in to your OpenAI account.
+    2. Navigate to the API section.
+    3. Follow the instructions to generate a new API key.
+    
+    For detailed steps, visit [OpenAI API Documentation](https://beta.openai.com/docs/api-reference/authentication).
+    
+    To add billing credits:
+    1. Go to the Billing section in your OpenAI account.
+    2. Choose to add credits or update your billing method.
+    
+    For more information on managing billing and credits, check out [OpenAI Billing FAQ](https://help.openai.com/en/articles/5726858-billing-faq).
+    
+    </p>
+    </details>
+    
+    <details>
+    <summary>Anthropic API Key and Credits</summary>
+    <p>
+    
+    You can get an Anthropic Claude AI API key by: 
+    1. Signing up at [anthropic.com](https://www.anthropic.com/).
+    2. Clicking "API Keys" in the top menu.
+    3. Clicking "Create API Key".
+    
+    To add billing credits:
+    1. Click "Billing" in the top menu.
+    2. Click "Add Credits" to purchase.
+    
+    More info: [anthropic.com/docs](https://www.anthropic.com/docs)
+    
+    </p>
+    </details>
+    
 
 <br>
 
@@ -151,7 +151,7 @@ gpt_interview_manager.generate_interview(
     # Create Word document
     from openinterview import DocumentCreator
     interview_coach = DocumentCreator()
-    interview_coach.create_qa_document(generated_qa_dict, "CompanyName", 11, "interviews/documents")
+    interview_coach.create_qa_document(generated_qa_dict, "TeamViewer15", 11, "interviews/documents")
     
     # Generate audio files
     from openinterview import save_google_tts
@@ -203,7 +203,7 @@ gpt_interview_manager.generate_interview(
     # Create Word document
     from openinterview import DocumentCreator
     interview_coach = DocumentCreator()
-    interview_coach.create_qa_document(generated_qa_dict, "CompanyName", 11, "interviews/documents")
+    interview_coach.create_qa_document(generated_qa_dict, "TeamViewer15", 11, "interviews/documents")
     
     # Generate audio files
     from openinterview import save_google_tts
@@ -220,47 +220,39 @@ player = RandomPlayer("path/to/output")  # Directory containing question.mp3 fil
 player.play_random_mp3()
 ```
 
+<br>
 
-
-## Arguments and Prompt engineering
+## Prompt engineering
 
 You can achieve your goals by directly utilizing the system_prompt and user_prompt based on the following information.
 
-### Arguments
 
-| Argument Name      | Role                                                                                           |
-|---------------------|------------------------------------------------------------------------------------------------|
-| position            | Refers to AI researcher or the specific job role.                                             |
-| jd                  | Represents the job description.                                                               |
-| interview_type      | Indicates the type of interview. Default is 'base'.                                           |
-| language            | Specifies the language to be used. Default is English.                                         |
-| candidate_resume    | Represents the resume of the candidate.                                                       |
-| interviewer_resume  | Represents the resume of the interviewer.                                                     |
-| max_sentence        | Specifies the minimum number of sentences to be included in each answer. Default is 10.        |
-| custom_prompt       | Provides user-defined additional instructions.                                                 |
-
-
-### Prompt engineering
-
-**System Prompt:**
+### **System Prompt:**
 - The system prompt is generated based on information such as `position`, `interview_type`, `jd`, `language`, `candidate_resume`, `interviewer_resume`, `max_sentence`, `custom_prompt`, etc.
+    - `position`            : Refers to AI researcher or the specific job role.                                             
+    - `jd`                  : Represents the job description.                                                               
+    - `interview_type`      : Indicates the type of interview. Default is 'generalQAs'.                                      
+    - `language`            : Specifies the language to be used. Default is English.                                         
+    - `candidate_resume`    : Represents the resume of the candidate.                                                       
+    - `interviewer_resume`  : Represents the resume of the interviewer.                                                     
+    - `max_sentence`        : Specifies the minimum number of sentences to be included in each answer. Default is 10.       
+    - `custom_prompt`       : Provides user-defined additional instructions.                                                
+
 - It includes specific instructions tailored to the user's role and interview type.
 - Additionally, any additional user-defined instructions are also incorporated into the system prompt.
+    | Type               | Prompt Content                                                                                                                                                                                                                                          |
+    |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | System Prompt      | - **Basic Information:** Generated based on Position, Interview Type, JD, Language, Candidate Resume, Interviewer Resume, Max Sentence, etc. <br>- **Additional Instructions by Interview Type:** Includes specific instructions based on Interview Type (e.g., `generalQAs`, `generalTechQAs`, `techQAsFromResume`, `techQAsFromExperts`, `techQAs`, `personalityQAs`, `reviewResume`, etc.).<br>- **Additional Instructions:** If a custom_prompt provided by the user exists, it is included in the prompt returned.                                            |
 
-**User Prompt:**
+### **User Prompt:**
 - User prompts vary depending on the interviewer's role.
 - Specific instructions for each type of interview are provided.
 - Additional instructions, such as highlighting specific sections of the resume, may also be included based on the interviewer's role.
 
-These prompts are designed to facilitate interaction between the user and the system, with specific details provided to the user.
+    | Type               | Prompt Content                                                                                                                                                                                                                                          |
+    |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | User Prompt        | - **User Instructions by Interview Type:** Provides user instructions specific to Interview Type (e.g., `generateQs`, `generateQAs`, `pointOutResume`, `adviceResume`, etc.). <br>- **Prompt Format:** Returned in text format containing given arguments and specific instructions.                                                                                                                                              |
+    
 
 
-
-| Type               | Prompt Content                                                                                                                                                                                                                                          |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| System Prompt      | - **Basic Information:** Generated based on Position, Interview Type, JD, Language, Candidate Resume, Interviewer Resume, Max Sentence, etc.                                                                                                                                                                        |
-|                    | - **Additional Instructions by Interview Type:** Includes specific instructions based on Interview Type (e.g., generalQAs, generalTechQAs, techQAsFromResume, techQAsFromExperts, techQAs, personalityQAs, reviewResume, etc.).                                                                                   |
-|                    | - **Additional Instructions:** If a custom_prompt provided by the user exists, it is included in the prompt returned.                                                                                                                                                                                                 |
-| User Prompt        | - **User Instructions by Interview Type:** Provides user instructions specific to Interview Type (e.g., generateQs, generateQAs, pointOutResume, adviceResume, etc.).                                                                                                                                              |
-|                    | - **Prompt Format:** Returned in text format containing given arguments and specific instructions.                                                                                                                                                                                                                   |
 
