@@ -89,8 +89,13 @@ from openinterview import InterviewManager
 claudeToken = "<your_claude_token>"
 claude_interview_manager = InterviewManager(api_key=claudeToken, engine="Claude")
 
+jd = """
+The 'jd', 'resume', and other arguments
+can accommodate extensive text.
+"""
+
 claude_interview_manager.generate_interview(
-    jd="This role demands a deep enthusiasm for AI development.",
+    jd=jd,
     resume="path/resume.pdf or path/resume.txt or string",
     position= "AI Researcher",
     interview_type="techQAsFromResume",
@@ -111,8 +116,8 @@ openai.api_key = "<your_openai_token>"
 gpt_interview_manager = InterviewManager(api_key=openai.api_key, engine="GPT")
 
 gpt_interview_manager.generate_interview(
-    jd="This role demands a deep enthusiasm for AI development.",
-    resume="path/resume.pdf or path/resume.txt or string",
+    jd="This role demands a deep enthusiasm for AI development.", # Feasible for long text
+    resume="path/resume.pdf or path/resume.txt or long text",
     position= "AI Researcher",
     interview_type="techQAsFromResume",
     language="English", # Any language you want
