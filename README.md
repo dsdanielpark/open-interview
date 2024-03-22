@@ -2,6 +2,14 @@
 
 `$ pip install open-interview`
 
+
+
+
+https://github.com/dsdanielpark/open-interview/assets/81407603/22f9b991-33e8-40d2-a4f2-b80199415767
+
+
+
+
 Transform your job interview preparation into an unparalleled journey with **Open Interview**, where the avant-garde artificial intelligence of OpenAI, Anthropic, and Google is meticulously tailored to forge your path to success. Here, every interaction is designed to sculpt your technical and personal narrative into perfection, mirroring the exigencies of your dream job.
 
 
