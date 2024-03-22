@@ -31,7 +31,7 @@ Transform your job interview preparation into an unparalleled journey with **Ope
 <br>
 
 ## Stellar Features ✨
-
+- **🌍 Universal Language Support:** Emphasize the ability to accommodate all languages across the following features:
 - **🖋️ Dynamic Q&A Alchemy:** Craft your arsenal with precision—generate nuanced technical interview Q&As distilled from the essence of your resume and the job description.
 - **📖 Document Genesis:** Automate the creation of elegant Word documents (.docx), encapsulating your personalized interview Q&As for study and reflection.
 - **🎧 Sonic Refinement:** Convert your Q&As into audio files, enabling auditory mastery and convenience for your preparatory rituals.
