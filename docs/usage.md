@@ -70,12 +70,12 @@ These examples show the minimal code required to generate interview content usin
 
 
 
+> [!IMPORTANT] 
+> Increasing the `iteration` argument can generate more QAs but may lead to duplicates and excessive token usage, as it's an experimental feature.
+
 
 
 ### Using Claude
-
-> [!IMPORTANT] 
-> Increasing the `iteration` argument can generate more QAs but may lead to duplicates and excessive token usage, as it's an experimental feature.
 
 
 ```python
@@ -140,6 +140,11 @@ Default plays randomly for 2 minutes. Press 'n' for next question, 'q' to quit.
 
 ## Usage
 
+You can also execute the strongly wrapped above step by step, especially noting how the prompt in section 2 is generated.
+
+> [!TIP] 
+> When using specific models in Claude, GPT, and Gemini, you may need to re-engineer prompts based on the detailed codes' system_prompt and user_prompt outputs to create the desired documents.
+
 ### OpenAI GPT
 
 1. Import the required modules and instantiate `InterviewGPT` with your OpenAI API key.
@@ -154,7 +159,10 @@ Default plays randomly for 2 minutes. Press 'n' for next question, 'q' to quit.
     ```
 
 2. Provide the job description and resume, set the desired parameters, and generate system and user prompts in the following format. Check the generated prompts and modify as needed. You can create the desired prompt through a few attempts via web or API.
+
+    https://github.com/dsdanielpark/open-interview/blob/f0770da7a473f595f66df93c9eea2af5d6721595/openinterview/models/claude.py#L141
     
+
     ```python
     from openinterview import InterviewGPT
     
@@ -212,6 +220,8 @@ Default plays randomly for 2 minutes. Press 'n' for next question, 'q' to quit.
     claude_interviewer = InterviewClaude(api_key=claudeToken, engine="Claude")
     ```
 2. Provide the job description and resume, set the desired parameters, and generate system and user prompts in the following format. Check the generated prompts and modify as needed. You can create the desired prompt through a few attempts via web or API.
+
+    https://github.com/dsdanielpark/open-interview/blob/f0770da7a473f595f66df93c9eea2af5d6721595/openinterview/models/gpt.py#L144
 
     ```python
     from openinterview import InterviewGPT
@@ -272,6 +282,8 @@ player.play_random_mp3()
 
 You can achieve your goals by directly utilizing the system_prompt and user_prompt based on the following information.
 
+> [!NOTE]
+> For OpenAI, `gpt-3.5-turbo` is the default, while for Claude, `claude-3-opus-20240229` with 4096 tokens is standard. Recognizing the need for model-specific prompt engineering, the prompter function is separated for examples and bound as a static method at [prompter.py](https://github.com/dsdanielpark/open-interview/blob/main/openinterview/utils/prompter.py). Consider different prompt engineering if using other models. You can check [Open AI - Models](https://platform.openai.com/docs/models), [Anthropic - Models](https://docs.anthropic.com/claude/docs/models-overview) for more details.
 
 ### **System Prompt:**
 - The system prompt is generated based on information such as `position`, `interview_type`, `jd`, `language`, `candidate_resume`, `interviewer_resume`, `max_sentence`, `custom_prompt`, etc.
