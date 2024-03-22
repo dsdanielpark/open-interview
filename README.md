@@ -1,6 +1,9 @@
 # Open Interview <img alt="PyPI" src="https://img.shields.io/pypi/v/open-interview?color=black">
+Looking to practice mock interviews tailored to your resume and job description? Seeking an English interview simulation? 
+Dive in with the Python open-source package open-interview. 
 
 `$ pip install open-interview`
+
 
 
 
