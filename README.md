@@ -79,6 +79,10 @@ Generate interview content using Claude or GPT models with minimal setup:
 
 #### Using Claude
 
+> [!IMPORTANT] 
+> Increasing the `iteration` argument can generate more QAs but may lead to duplicates and excessive token usage, as it's an experimental feature.
+
+
 ```python
 from openinterview import InterviewManager
 
