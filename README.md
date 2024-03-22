@@ -132,7 +132,9 @@ gpt_interview_manager.generate_interview(
 To randomly play `question.mp3` files from a specified folder, create an instance of the `RandomPlayer` class with the folder path, and then invoke `play_random_mp3`:
 
 ```python
-player = RandomPlayer("path/to/output")  # Directory containing question.mp3 files
+from openinterview import RandomPlayer
+
+player = RandomPlayer(directory="path/to/output", interval=120)  # Directory containing question.mp3 files
 player.play_random_mp3()
 ```
 Default plays randomly for 2 minutes. Press 'n' for next question, 'q' to quit.
