@@ -133,7 +133,7 @@ gpt_interview_manager.generate_interview(
 
 
 
-Interview_type arguments as follow:
+The `interview_type` arguments as follow:
   - *generalQAs*: Ask about technical and personal skills in-depth.
   - *generalTechQAs*: Ask basic professional questions related to the job.
   - *techQAsFromResume*: Focus on technical skills listed on the resume.
@@ -178,5 +178,7 @@ Reach out to the core maintainer, [Daniel Park](https://github.com/DSDanielPark)
 
 ## License ©️ 
 [Apache 2.0](https://opensource.org/license/apache-2-0) license, 2024. 
+
+The initial version of this project took roughly two days for a single person, including documentation for all processes.
 
 
