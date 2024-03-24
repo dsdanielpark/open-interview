@@ -1,11 +1,18 @@
 # Open Interview <img alt="PyPI" src="https://img.shields.io/pypi/v/open-interview?color=black">
+
 Looking to practice mock interviews tailored to your resume and job description? Seeking an technical interview simulation? 
-Dive in with the Python open-source package open-interview. 
-
-`$ pip install open-interview`
+Dive in with the Python open-source package `open-interview`. 
 
 
 
+
+<p align="right">
+  <a href="https://github.com/dsdanielpark/open-interview"><img alt="pip download" src="https://img.shields.io/badge/pip_install-open_interview-black"></a> 
+  <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
+  <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdsdanielpark%2Fopen-interview%2F&count_bg=%23000000&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
+  <a href="https://img.shields.io/pepy/dt/open-interview?logoColor=black"><img alt="Downloads" src="https://pepy.tech/badge/open-interview"></a>
+  <!-- <a href="https://github.com/dsdanielpark/Gemini-API/stargazers"><img src="https://img.shields.io/github/stars/dsdanielpark/Gemini-API?style=social"></a> -->
+</p>
 
 
 https://github.com/dsdanielpark/open-interview/assets/81407603/22f9b991-33e8-40d2-a4f2-b80199415767
