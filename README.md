@@ -25,10 +25,10 @@ Transform your job interview preparation into an unparalleled journey with **Ope
 
 
 - [Open Interview ](#open-interview-)
-  - [Stellar Features ✨](#stellar-features-)
+  - [Stellar Features](#stellar-features-)
   - [Commencing Voyage](#commencing-voyage)
     - [Prerequisites](#prerequisites)
-    - [Installation 📦](#installation-)
+    - [Installation](#installation-)
     - [Quick Start](#quick-start)
       - [Using Claude](#using-claude)
       - [Using GPT](#using-gpt)
@@ -36,7 +36,7 @@ Transform your job interview preparation into an unparalleled journey with **Ope
     - [Usage](#usage)
   - [Contribution](#contribution)
   - [FAQ \& Support](#faq--support)
-  - [License ©️](#license-️)
+  - [License](#license-️)
 
 
 <br>
