@@ -1,11 +1,18 @@
 # Open Interview <img alt="PyPI" src="https://img.shields.io/pypi/v/open-interview?color=black">
+
 Looking to practice mock interviews tailored to your resume and job description? Seeking an technical interview simulation? 
-Dive in with the Python open-source package open-interview. 
-
-`$ pip install open-interview`
+Dive in with the Python open-source package `open-interview`. 
 
 
 
+
+<p align="right">
+  <a href="https://github.com/dsdanielpark/open-interview"><img alt="pip download" src="https://img.shields.io/badge/pip_install-open_interview-black"></a> 
+  <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
+  <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdsdanielpark%2Fopen-interview%2F&count_bg=%23000000&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
+  <a href="https://img.shields.io/pepy/dt/open-interview?logoColor=black"><img alt="Downloads" src="https://pepy.tech/badge/open-interview"></a>
+  <!-- <a href="https://github.com/dsdanielpark/Gemini-API/stargazers"><img src="https://img.shields.io/github/stars/dsdanielpark/Gemini-API?style=social"></a> -->
+</p>
 
 
 https://github.com/dsdanielpark/open-interview/assets/81407603/22f9b991-33e8-40d2-a4f2-b80199415767
@@ -18,10 +25,10 @@ Transform your job interview preparation into an unparalleled journey with **Ope
 
 
 - [Open Interview ](#open-interview-)
-  - [Stellar Features](#stellar-features-)
+  - [Stellar Features ✨](#stellar-features-)
   - [Commencing Voyage](#commencing-voyage)
     - [Prerequisites](#prerequisites)
-    - [Installation](#installation-)
+    - [Installation 📦](#installation-)
     - [Quick Start](#quick-start)
       - [Using Claude](#using-claude)
       - [Using GPT](#using-gpt)
@@ -29,7 +36,7 @@ Transform your job interview preparation into an unparalleled journey with **Ope
     - [Usage](#usage)
   - [Contribution](#contribution)
   - [FAQ \& Support](#faq--support)
-  - [License](#license-️)
+  - [License ©️](#license-️)
 
 
 <br>
@@ -133,7 +140,7 @@ gpt_interview_manager.generate_interview(
 
 
 
-Interview_type arguments as follow:
+The `interview_type` arguments as follow:
   - *generalQAs*: Ask about technical and personal skills in-depth.
   - *generalTechQAs*: Ask basic professional questions related to the job.
   - *techQAsFromResume*: Focus on technical skills listed on the resume.
@@ -161,8 +168,11 @@ Default plays randomly for 2 minutes. Press 'n' for next question, 'q' to quit.
 
 For detailed examples, refer to the 📋[Usage document for example code and prompting engineering](https://github.com/dsdanielpark/open-interview/blob/main/docs/usage.md) or the 💻[tutorial script](https://github.com/dsdanielpark/open-interview/blob/main/script/example.ipynb).
 
-- OpenAI GPT: Use `GptGenerator` for GPT-based content generation.
-- Anthropic Claude: Use `ClaudeGenerator` for Claude-based interviews.
+- OpenAI GPT: Use `InterviewGPT` for GPT-based content generation.
+- Anthropic Claude: Use `InterviewClaude` for Claude-based interviews.
+
+You can use [LangChain](https://python.langchain.com/docs/get_started), [LangSmith](https://python.langchain.com/docs/langsmith/), [LangServe](https://python.langchain.com/docs/langserve), and [LangGraph](https://python.langchain.com/docs/langgraph) for faster and more efficient coding and services. You can check [few-shot prompt template](https://python.langchain.com/docs/modules/model_io/prompts/few_shot_examples) in LangChain. Also, you can try faster RAG with [Llama Index](https://www.llamaindex.ai/). However, this project is used for general and efficient search for other my private projects.
+
 <br>
 
 ## Contribution
@@ -178,5 +188,7 @@ Reach out to the core maintainer, [Daniel Park](https://github.com/DSDanielPark)
 
 ## License ©️ 
 [Apache 2.0](https://opensource.org/license/apache-2-0) license, 2024. 
+
+The initial version of this project took roughly two days for a single person, including documentation for all processes.
 
 
