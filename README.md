@@ -161,8 +161,8 @@ Default plays randomly for 2 minutes. Press 'n' for next question, 'q' to quit.
 
 For detailed examples, refer to the 📋[Usage document for example code and prompting engineering](https://github.com/dsdanielpark/open-interview/blob/main/docs/usage.md) or the 💻[tutorial script](https://github.com/dsdanielpark/open-interview/blob/main/script/example.ipynb).
 
-- OpenAI GPT: Use `InterviewGPT` for GPT-based content generation.
-- Anthropic Claude: Use `InterviewClaude` for Claude-based interviews.
+- OpenAI GPT: Use `GptGenerator` for GPT-based content generation.
+- Anthropic Claude: Use `ClaudeGenerator` for Claude-based interviews.
 <br>
 
 ## Contribution

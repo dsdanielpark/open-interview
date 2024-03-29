@@ -6,7 +6,7 @@ from typing import List, Dict, Any, Optional
 from ..utils.file_manager import load_file_content
 
 
-class InterviewGPT:
+class GptGenerator:
     """A class for managing GPT-based interviews.
 
     Attributes:
@@ -19,7 +19,7 @@ class InterviewGPT:
     def __init__(
         self, model: str = "gpt-3.5-turbo", api_key: Optional[str] = None
     ) -> None:
-        """Initializes the InterviewGPT object with a model and an API key.
+        """Initializes the GptGenerator object with a model and an API key.
 
         Args:
             model (str): The model version of GPT to use. Defaults to "gpt-3.5-turbo".

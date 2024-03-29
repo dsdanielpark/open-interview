@@ -1,2 +1,2 @@
-from openinterview.models.claude import InterviewClaude
-from openinterview.models.gpt import InterviewGPT
+from openinterview.models.claude import ClaudeGenerator
+from openinterview.models.gpt import GptGenerator

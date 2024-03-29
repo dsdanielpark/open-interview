@@ -6,7 +6,7 @@ from typing import List, Dict, Any
 from openinterview.utils.file_manager import load_file_content
 
 
-class InterviewClaude:
+class ClaudeGenerator:
     """
     Class for conducting interviews using Claude, an AI model from Anthropic.
 

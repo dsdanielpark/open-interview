@@ -147,15 +147,15 @@ You can also execute the strongly wrapped above step by step, especially noting 
 
 ### OpenAI GPT
 
-1. Import the required modules and instantiate `InterviewGPT` with your OpenAI API key.
+1. Import the required modules and instantiate `GptGenerator` with your OpenAI API key.
     
     ```python
     import openai
-    from openinterview import InterviewGPT
+    from openinterview import GptGenerator
     
     openai.api_key = "value"
     
-    gpt_interviewer = InterviewGPT(api_key=openai.api_key)
+    gpt_interviewer = GptGenerator(api_key=openai.api_key)
     ```
 
 2. Provide the job description and resume, set the desired parameters, and generate system and user prompts in the following format. Check the generated prompts and modify as needed. You can create the desired prompt through a few attempts via web or API.
@@ -164,12 +164,12 @@ You can also execute the strongly wrapped above step by step, especially noting 
     
 
     ```python
-    from openinterview import InterviewGPT
+    from openinterview import GptGenerator
     
     jd = "This role demands a deep enthusiasm for AI development."
     resume = "I'm a passionate AI engineer. https://github.com/dsdanielpark"
     
-    system_prompt = InterviewGPT.create_system_prompt(
+    system_prompt = GptGenerator.create_system_prompt(
         jd=jd,
         candidate_resume=resume,
         position="AI Researcher",
@@ -179,7 +179,7 @@ You can also execute the strongly wrapped above step by step, especially noting 
         )
     print(system_prompt)
 
-    user_prompt = InterviewGPT.create_base_prompt("generateQAs")
+    user_prompt = GptGenerator.create_base_prompt("generateQAs")
     print(user_prompt)
     ```
     
@@ -211,25 +211,25 @@ You can also execute the strongly wrapped above step by step, especially noting 
 
 ### Anthropic Claude
 
-1. Import the required modules and instantiate `InterviewClaude` with your Anthropic API key.
+1. Import the required modules and instantiate `ClaudeGenerator` with your Anthropic API key.
     
     ```python
-    from openinterview import InterviewClaude
+    from openinterview import ClaudeGenerator
     
     claudeToken = "value"
-    claude_interviewer = InterviewClaude(api_key=claudeToken, engine="Claude")
+    claude_interviewer = ClaudeGenerator(api_key=claudeToken, engine="Claude")
     ```
 2. Provide the job description and resume, set the desired parameters, and generate system and user prompts in the following format. Check the generated prompts and modify as needed. You can create the desired prompt through a few attempts via web or API.
 
     https://github.com/dsdanielpark/open-interview/blob/f0770da7a473f595f66df93c9eea2af5d6721595/openinterview/models/gpt.py#L144
 
     ```python
-    from openinterview import InterviewGPT
+    from openinterview import GptGenerator
 
     jd = "This role demands a deep enthusiasm for AI development."
     resume = "I'm a passionate AI engineer. https://github.com/dsdanielpark"
     
-    system_prompt = InterviewClaude.create_system_prompt(
+    system_prompt = ClaudeGenerator.create_system_prompt(
         jd=jd,
         candidate_resume=resume,
         position="AI Researcher",
@@ -239,7 +239,7 @@ You can also execute the strongly wrapped above step by step, especially noting 
     )
     print(system_prompt)
     
-    user_prompt = InterviewClaude.create_base_prompt("generateQAs")
+    user_prompt = ClaudeGenerator.create_base_prompt("generateQAs")
     print(user_prompt)
     ```
 
@@ -283,8 +283,11 @@ player.play_random_mp3()
 
 You can achieve your goals by directly utilizing the system_prompt and user_prompt based on the following information.
 
+However, current prompt engineering can be imperfect for rapid mocking. You are welcome to contribute or modify it for use.
+
+
 > [!NOTE]
-> OpenAI defaults to `gpt-3.5-turbo`, while Claude's standard is `claude-3-opus-20240229` with a 4096 token limit. Given the importance of crafting model-specific prompts, the `InterviewGPT` and `InterviewClaude` classes incorporate a static method for prompt generation. However, I've provided separate examples in [prompter.py](https://github.com/dsdanielpark/open-interview/blob/main/openinterview/utils/prompter.py). Should you opt for different models, it's advisable to adapt your prompt engineering accordingly. For further information, you can visit [Open AI - Models](https://platform.openai.com/docs/models) and [Anthropic - Models](https://docs.anthropic.com/claude/docs/models-overview).
+> OpenAI defaults to `gpt-3.5-turbo`, while Claude's standard is `claude-3-opus-20240229` with a 4096 token limit. Given the importance of crafting model-specific prompts, the `GptGenerator` and `ClaudeGenerator` classes incorporate a static method for prompt generation. However, I've provided separate examples in [prompter.py](https://github.com/dsdanielpark/open-interview/blob/main/openinterview/utils/prompter.py). Should you opt for different models, it's advisable to adapt your prompt engineering accordingly. For further information, you can visit [Open AI - Models](https://platform.openai.com/docs/models) and [Anthropic - Models](https://docs.anthropic.com/claude/docs/models-overview).
 
 ### **System Prompt:**
 - The system prompt is generated based on information such as `position`, `interview_type`, `jd`, `language`, `candidate_resume`, `interviewer_resume`, `max_sentence`, `custom_prompt`, etc.

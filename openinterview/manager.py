@@ -1,6 +1,6 @@
 import os
 from .utils.doc_manager import DocumentCreator
-from .models import InterviewClaude, InterviewGPT
+from .models import ClaudeGenerator, GptGenerator
 from .modules.voice.google import save_google_tts
 
 
@@ -28,9 +28,9 @@ class InterviewManager:
         self.engine = engine
 
         if engine == "GPT":
-            self.interviewer = InterviewGPT(api_key=api_key)
+            self.interviewer = GptGenerator(api_key=api_key)
         elif engine == "Claude":
-            self.interviewer = InterviewClaude(api_key=api_key)
+            self.interviewer = ClaudeGenerator(api_key=api_key)
         else:
             raise ValueError("Unsupported engine. Please choose 'GPT' or 'Claude'.")
 

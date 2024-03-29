@@ -1,5 +1,5 @@
-from .models.gpt import InterviewGPT
-from .models.claude import InterviewClaude
+from .models.gpt import GptGenerator
+from .models.claude import ClaudeGenerator
 
 from .manager import InterviewManager
 
