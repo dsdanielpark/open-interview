@@ -191,6 +191,5 @@ Reach out to the core maintainer, [Daniel Park](https://github.com/DSDanielPark)
 ## License ©️ 
 [Apache 2.0](https://opensource.org/license/apache-2-0) license, 2024. 
 
-The initial version of this project took roughly two days for a single person, including documentation for all processes.
 
 
