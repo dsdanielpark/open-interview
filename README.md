@@ -170,6 +170,9 @@ For detailed examples, refer to the 📋[Usage document for example code and pro
 
 - OpenAI GPT: Use `InterviewGPT` for GPT-based content generation.
 - Anthropic Claude: Use `InterviewClaude` for Claude-based interviews.
+
+You can use [LangChain](https://python.langchain.com/docs/get_started), [LangSmith](https://python.langchain.com/docs/langsmith/), [LangServe](https://python.langchain.com/docs/langserve), and [LangGraph](https://python.langchain.com/docs/langgraph) for faster and more efficient coding and services. You can check [few-shot prompt template](https://python.langchain.com/docs/modules/model_io/prompts/few_shot_examples) in LangChain. Also, you can try faster RAG with [Llama Index](https://www.llamaindex.ai/). However, this project is used for general and efficient search for other my private projects.
+
 <br>
 
 ## Contribution
