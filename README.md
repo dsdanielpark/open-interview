@@ -50,6 +50,7 @@ Transform your job interview preparation into an unparalleled journey with **Ope
 
 <br>
 
+
 ## Commencing Voyage
 Welcome to the nexus of your interview preparation odyssey.
 
@@ -157,8 +158,8 @@ To randomly play `question.mp3` files from a specified folder, create an instanc
 ```python
 from openinterview import RandomPlayer
 
-player = RandomPlayer(directory="path/to/output", interval=120)  # Directory containing question.mp3 files
-player.play_random_mp3()
+p = RandomPlayer(directory="path/to/output", interval=120)  # Directory containing question.mp3 files
+p.play_random_mp3()
 ```
 Default plays randomly for 2 minutes. Press 'n' for next question, 'q' to quit.
 
@@ -168,8 +169,9 @@ Default plays randomly for 2 minutes. Press 'n' for next question, 'q' to quit.
 
 For detailed examples, refer to the 📋[Usage document for example code and prompting engineering](https://github.com/dsdanielpark/open-interview/blob/main/docs/usage.md) or the 💻[tutorial script](https://github.com/dsdanielpark/open-interview/blob/main/script/example.ipynb).
 
-- OpenAI GPT: Use `InterviewGPT` for GPT-based content generation.
-- Anthropic Claude: Use `InterviewClaude` for Claude-based interviews.
+- OpenAI GPT: Use `GptGenerator` for GPT-based content generation.
+- Anthropic Claude: Use `ClaudeGenerator` for Claude-based interviews.
+
 
 You can use [LangChain](https://python.langchain.com/docs/get_started), [LangSmith](https://python.langchain.com/docs/langsmith/), [LangServe](https://python.langchain.com/docs/langserve), and [LangGraph](https://python.langchain.com/docs/langgraph) for faster and more efficient coding and services. You can check [few-shot prompt template](https://python.langchain.com/docs/modules/model_io/prompts/few_shot_examples) in LangChain. Also, you can try faster RAG with [Llama Index](https://www.llamaindex.ai/). However, this project is used for general and efficient search for other my private projects.
 
