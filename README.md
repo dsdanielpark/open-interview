@@ -191,5 +191,7 @@ Reach out to the core maintainer, [Daniel Park](https://github.com/DSDanielPark)
 ## License ©️ 
 [Apache 2.0](https://opensource.org/license/apache-2-0) license, 2024. 
 
+<br><br>
 
+Inheritance through LangChain or BaseModel, prompt disambiguation, and refined prompt engineering were omitted for rapid development within one day.
 
